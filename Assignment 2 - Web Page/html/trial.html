@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../javascript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- Below line of code is used for pdf download -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <body>
+    <div class="container">
+      <h2>Text Editor</h2>
+      <h2>
+        <input
+          type="text"
+          placeholder="Enter Title ...   "
+          id="title"
+          oninput="updatePreview()"
+        />
+      </h2>
+
+      <textarea
+        id="textInput"
+        placeholder="Enter text here..."
+        oninput="updatePreview()"
+      ></textarea>
+    </div>
+    <div class="buttons">
+      <button onclick="uppercaseText()">Uppercase <b>(A)</b> </button>
+      <button onclick="lowercaseText()">Lowercase <b>(a)</b> </button>
+      <button onclick="capitalize()">Capitalize <b>(Aa)</b> </button>
+      <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
+      <button onclick="copyText()"><i class="fa fa-copy"></i> Copy</button>
+      <button id="cmd" style="background-color: #42b72a">
+        <i class="fa fa-download"></i> Download
+      </button>
+      <button onclick="clearText()" style="background-color: red">Clear</button>
+    </div>
+    <div class="container">
+      <h2>Preview</h2>
+      <div id="previewSection"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Below line of code is used for pdf download -->
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script>
+      var doc = new jsPDF();
+      $("#cmd").click(function () {
+        var confirmDownload = confirm(
+          "Are you sure you want to Download the text as a pdf?"
+        );
+        if (confirmDownload) {
+            var title=document.getElementById("title").value;
+        //   var title = $("#title").val(); // Get the value from the input tag with id "title"
+          var content = document.getElementById("textInput").value;
+       
+          doc.text(title + "\n\n" + content, 10, 10);
+
+          doc.save(title + ".pdf"); //   Name Of Saved PDF
+        
+        }
+      });
+    </script>
+
+    <!-- Above line of code is used for pdf download -->
+  </body>
+</html>
