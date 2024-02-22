@@ -1,0 +1,82 @@
+body {
+  background-color: #f0f2f5;
+
+}
+
+.signIn {
+  margin: 100px 175px;
+}
+
+.signUp {
+  margin: 100px 500px;
+}
+
+
+input {
+  width: 364px;
+  height: 52px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+button {
+  width: 364px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+}
+
+.signupButton {
+  width: 192px;
+  height: 48px;
+  align-items: center;
+  color: white;
+  background-color: #42b72a;
+
+}
+
+.left img {
+  float: left;
+  padding: 50px;
+  width: 600px;
+  display: block;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 1px solid black; */
+
+}
+
+.right * {
+  margin: 0 auto;
+  display: block;
+  font-size: medium;
+}
+
+.right {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+
+.centre {
+  float: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.centre * {
+  margin: 0 auto;
+  display: block;
+  font-size: medium;
+
+}
