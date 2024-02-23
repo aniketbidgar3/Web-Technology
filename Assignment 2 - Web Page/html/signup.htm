@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Assignment 2 - Web Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <script type="text/javascript" src="../javascript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        .forgot {
-            padding-left: 130px;
-            text-decoration: none;
-        }
+      .forgot {
+        padding-left: 130px;
+        text-decoration: none;
+      }
 
-        input {
-            border: 1px solid grey;
-        }
+      input {
+        border: 1px solid grey;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="signUp">
-        <marquee vspace="30px" style="font-size: larger">WELCOME TO MY FIRST WEB PAGE ......
-        </marquee>
+  <body>
+    <button onclick="darkMode()" id="mode"><i class="fa fa-moon-o"></i></button>
 
+    <div class="signUp ">
+      <h1>Text Editor</h1>
+      <marquee vspace="30px" style="font-size: larger"
+        >WELCOME TO MY FIRST WEB PAGE ......
+      </marquee>
 
-        <div class="centre">
-            <form action="">
-
-                <input type="text" value="" placeholder="First name" />
-                <br>
-                <input type="text" value="" placeholder="Surname" />
-                <br />
-                <input type="email" placeholder="Mobile number or email adress">
-                <br />
-                <input type="password" name="" value="" placeholder="New Password" />
-                <br />
-                <br />
-                <hr>
-                <button type="button" id="LogIn" style="background-color: #42b72a; margin-top:30px ">
-                    <a href="index.html" style="text-decoration: none ; color: white"> Sign Up </a>
-                </button>
-                <br />
-                <br />
-
-
-            </form>
-        </div>
+      <div class="centre">
+        <input type="text" value="" placeholder="First name" />
+        <br />
+        <input type="text" value="" placeholder="Surname" />
+        <br />
+        <input type="email" placeholder="Mobile number or email adress" />
+        <br />
+        <input type="password" name="" value="" placeholder="New Password" />
+        <br />
+        <br />
+        <hr />
+        <button
+          type="button"
+          id="LogIn"
+          style="background-color: #42b72a; margin-top: 30px"
+        >
+          <a href="index.html" style="text-decoration: none; color: white">
+            Sign Up
+          </a>
+        </button>
+        <br />
+        <br />
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

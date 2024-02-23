@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Assignment 2 - Web Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="../javascript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .forgot {
+        padding-left: 130px;
+        text-decoration: none;
+      }
 
-<head>
-  <title>Assignment 2 - Web Page</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="../css/style.css" rel="stylesheet" />
-  <script type="text/javascript" src="../javascript/script.js"></script>
-  <style>
-    .forgot {
-      padding-left: 130px;
-      text-decoration: none;
-    }
+      input {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
 
-    input {
-      border: 1px solid grey;
-    }
-  </style>
-</head>
+  <body>
+    <button onclick="darkMode()" id="mode"><i class="fa fa-moon-o"></i></button>
 
-<body>
-  <div class="signIn">
-    <marquee vspace="30px" style="font-size: larger">WELCOME TO MY FIRST WEB PAGE ......
-    </marquee>
-    <div class="left">
-      <img src="../Assets/Welcome.jpg" alt="Welcome" />
+    <div class="signIn">
+      <h1>Text Editor</h1>
+      <marquee vspace="30px" style="font-size: larger"
+        >WELCOME TO MY FIRST WEB PAGE ......
+      </marquee>
+      <div class="left">
+        <img src="../Assets/Welcome.jpg" alt="Welcome" />
+      </div>
+
+      <div class="right">
+        <form action="">
+          <input type="text" value="" placeholder="Username" />
+          <br />
+          <br />
+          <input type="password" name="" value="" placeholder="Password" />
+          <br />
+          <br />
+
+          <button type="button" id="LogIn" style="background-color: #1877f2">
+            <a href="homepage.html" style="text-decoration: none; color: white">
+              Log in
+            </a>
+          </button>
+          <br />
+          <br />
+          <div class="forgot">
+            <a style="text-decoration: none" href="#">forgotten password ?</a>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <hr />
+          <br />
+          <button class="signupButton" type="">
+            <a href="signup.htm" style="text-decoration: none; color: white">
+              Create New Account
+            </a>
+          </button>
+        </form>
+      </div>
     </div>
-
-    <div class="right">
-      <form action="">
-        <input type="text" value="" placeholder="Username" />
-        <br />
-        <br />
-        <input type="password" name="" value="" placeholder="Password" />
-        <br />
-        <br />
-
-        <button type="button" id="LogIn" style="background-color: #1877f2; ">
-          <a href="homepage.htm" style="text-decoration: none ; color: white"> Log in </a>
-        </button>
-        <br />
-        <br />
-        <div class="forgot">
-          <a style="text-decoration: none" href="#">forgotten password ?</a>
-        </div>
-
-        <br />
-        <br />
-        <br />
-        <hr />
-        <br />
-        <button class="signupButton" type=""><a href="signup.htm" style="text-decoration: none ; color: white"> Create
-            New Account
-          </a></button>
-      </form>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
