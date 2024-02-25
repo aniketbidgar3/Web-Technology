@@ -3,24 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omeggle</title>
+    <title>Google Meet</title>
     <link rel="stylesheet" href="../css/style.css">
-
-  
   </head>
-  <body id="camera">
-    <div id="content">
+  <body>
+    <div>
       <h1 id="text"></h1>
-      <video id="video" autoplay ></video>
+      <video id="video" autoplay></video>
       <br />
       <div class="buttons">
 
-        <button onclick="openCamera()">On Camera</button>
+        <button onclick="shareScreen()">Share Screen</button>
         <button onclick="closeCamera()" style="background-color: red">
-          Close Camera
+          Stop Sharing
         </button>
       </div>
     </div>
-<script src="../javascript/script.js"></script>
+
+    <script src="../javascript/script.js"></script>
   </body>
 </html>
