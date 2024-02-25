@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omeggle</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 5px 5px;
+        border: none;
+        border-radius: 3px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="text"></h1>
+      <video id="video" autoplay></video>
+      <br />
+      <button onclick="openCamera()">On Camera</button>
+      <button onclick="closeCamera()" style="background-color: red">
+        Close Camera
+      </button>
+    </div>
+
+    <script>
+        //Function to Open Camera
+        async function openCamera() {
+            document.getElementById("text").innerHTML =
+            "Kya re Bhangar ke Shkal Ke ??";
+            const stream = await navigator.mediaDevices.getUserMedia({
+                video: true,
+            });
+            video.srcObject = stream;
+        }
+        
+        //Function to Close Camera
+      function closeCamera() {
+        const mediaStream = document.querySelector("video").srcObject;
+        const tracks = mediaStream.getTracks();
+        tracks.forEach((track) => track.stop());
+        document.querySelector("video").srcObject = null;
+      }
+    </script>
+  </body>
+</html>

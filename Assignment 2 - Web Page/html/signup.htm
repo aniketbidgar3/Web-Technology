@@ -4,7 +4,6 @@
     <title>Assignment 2 - Web Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/styles.css" rel="stylesheet" />
     <script type="text/javascript" src="../javascript/script.js"></script>
     <link
@@ -12,21 +11,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      .forgot {
-        padding-left: 130px;
-        text-decoration: none;
-      }
-
-      input {
-        border: 1px solid grey;
+      button {
+        width: 364px;
+        height: 48px;
+        border-radius: 10px;
+        border: none;
       }
     </style>
   </head>
 
   <body>
-    <button onclick="darkMode()" id="mode"><i class="fa fa-moon-o"></i></button>
+    <button class="nav-button">
+      <a href="index.html" style="color: black"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+    </button>
 
-    <div class="signUp ">
+    <button onclick="darkMode()" id="mode" class="nav-button">
+      <i class="fa fa-moon-o"></i>
+    </button>
+
+    <div class="signUp">
       <h1>Text Editor</h1>
       <marquee vspace="30px" style="font-size: larger"
         >WELCOME TO MY FIRST WEB PAGE ......

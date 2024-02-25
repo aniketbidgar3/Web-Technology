@@ -9,16 +9,24 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-
     />
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
   <body>
-    <button onclick="darkMode()" id="mode"><i class="fa fa-moon-o"></i></button>
+    <nav>
+      <button class="nav-button">
+        <a href="index.html" style="color: black"
+          ><i class="fa fa-arrow-left"></i
+        ></a>
+      </button>
+      <button onclick="darkMode()" id="mode" class="nav-button">
+        <i class="fa fa-moon-o"></i>
+      </button>
+    </nav>
 
     <div class="container">
-      <h1>Text Editor</h1>
+      <h1 class="text_black">Text Editor</h1>
       <h1>
         <input
           type="text"
@@ -52,19 +60,23 @@
       <button onclick="uppercaseText()">Uppercase <b>(A)</b></button>
       <button onclick="lowercaseText()">Lowercase <b>(a)</b></button>
       <button onclick="capitalize()">Capitalize <b>(Aa)</b></button>
+      <!-- <button onclick="capitalize()">Capitalize <b>(Aa)</b></button> -->
       <br />
       <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
+      <!-- <button onclick="copyText()"><i class="fa fa-copy"></i> Copy</button> -->
       <button onclick="copyText()"><i class="fa fa-copy"></i> Copy</button>
       <button id="cmd" style="background-color: #42b72a">
         <i class="fa fa-download"></i> Download
       </button>
-      <button onclick="clearText()" style="background-color: red">Clear</button>
+      <button onclick="clearText()" style="background-color: red">
+        <i class="fa fa-remove"></i> Clear
+      </button>
     </div>
 
     <div class="container">
-      <h1>Preview</h1>
-      <h1 id="previewTitle"></h1>
-      <div id="previewSection" f></div>
+      <h1 class="text_black">Preview</h1>
+      <h1 id="previewTitle" class="text_black"></h1>
+      <div id="previewSection" class="text_black"></div>
     </div>
 
     <script src="script.js"></script>

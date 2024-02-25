@@ -1,3 +1,4 @@
+// below 3 functions are used for Preview the Whole text including title and text
 function previewTitle() {
   updatePreview();
   getValue();
@@ -15,18 +16,22 @@ function getValue() {
   var value = inputElement.value;
   document.getElementById("previewTitle").innerText = value;
 }
+
+//Used to covert text into Lowercase
 function lowercaseText() {
   var text = document.getElementById("textInput").value;
   document.getElementById("textInput").value = text.toLowerCase();
   updatePreview();
 }
 
+//Used to covert text into Uppercase
 function uppercaseText() {
   var text = document.getElementById("textInput").value;
   document.getElementById("textInput").value = text.toUpperCase();
   updatePreview();
 }
 
+//Used to clear the text
 function clearText() {
   var confirmClear = confirm("Are you sure you want to clear the text?");
   if (confirmClear) {
@@ -36,6 +41,7 @@ function clearText() {
   }
 }
 
+//Used to copy the text
 function copyText() {
   var text = document.getElementById("textInput");
   text.select();
@@ -43,6 +49,7 @@ function copyText() {
   alert("Text copied to clipboard !");
 }
 
+//Used to Remove the extra spaces from the text
 function removeExtraSpaces() {
   var text = document.getElementById("textInput").value;
   text = text.replace(/\s+/g, " ");
@@ -50,6 +57,7 @@ function removeExtraSpaces() {
   updatePreview();
 }
 
+//Used to covert the first letter after '.' in capital letter
 function capitalize() {
   var text = document.getElementById("textInput").value;
   var newText = text.replace(/(^|\. *)([a-z])/g, function (match, p1, p2) {
@@ -59,6 +67,7 @@ function capitalize() {
   updatePreview();
 }
 
+//used to change the font of the text
 function applyFont() {
   var selectedFont = document.getElementById("fonts").value;
   document.getElementById("textInput").style.fontFamily = selectedFont;
@@ -67,6 +76,7 @@ function applyFont() {
   document.getElementById("previewTitle").style.fontFamily = selectedFont;
 }
 
+//used to enable darkmode
 function darkMode() {
   var mode = document.getElementById("mode").innerHTML;
   if (mode == '<i class="fa fa-moon-o"></i> ') {
