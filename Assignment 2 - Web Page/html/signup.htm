@@ -19,12 +19,11 @@
       }
     </style>
   </head>
-
   <body>
     <button class="nav-button">
-      <a href="index.html" style="color: black"
-        ><i class="fa fa-arrow-left"></i
-      ></a>
+      <a href="index.html" style="color: black">
+        <i class="fa fa-arrow-left"></i>
+      </a>
     </button>
 
     <button onclick="darkMode()" id="mode" class="nav-button">
@@ -33,33 +32,81 @@
 
     <div class="signUp">
       <h1>Text Editor</h1>
-      <marquee vspace="30px" style="font-size: larger"
-        >WELCOME TO MY FIRST WEB PAGE ......
-      </marquee>
+      <marquee vspace="15px" style="font-size: larger"
+        >WELCOME TO MY FIRST WEB PAGE ......</marquee
+      >
 
       <div class="centre">
-        <input type="text" value="" placeholder="First name" />
+        <h1 style="font-size: xx-large;">Create a new account</h1>
+        <p style="text-align: center;">it's quick and easy</p>
+        <br>
+        <input type="text" id="firstName" value="" placeholder="First name" />
         <br />
-        <input type="text" value="" placeholder="Surname" />
+        <input type="text" id="surname" value="" placeholder="Surname" />
         <br />
-        <input type="email" placeholder="Mobile number or email adress" />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+        />
         <br />
-        <input type="password" name="" value="" placeholder="New Password" />
+        <input
+          type="password"
+          id="password"
+          name=""
+          value=""
+          placeholder="New Password"
+        />
         <br />
         <br />
         <hr />
         <button
           type="button"
-          id="LogIn"
+          id="signUpBtn"
           style="background-color: #42b72a; margin-top: 30px"
         >
-          <a href="index.html" style="text-decoration: none; color: white">
-            Sign Up
-          </a>
+          Sign Up
         </button>
-        <br />
-        <br />
+        <br>
+        
       </div>
     </div>
+
+    <script>
+      document
+        .getElementById("signUpBtn")
+        .addEventListener("click", function () {
+          var firstName = document.getElementById("firstName").value;
+          var surname = document.getElementById("surname").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+
+          // Regular expressions for validation
+          var nameRegex = /^[a-zA-Z]+$/;
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!nameRegex.test(firstName)) {
+            alert("First name should only contain letters.");
+            return;
+          }
+
+          if (!nameRegex.test(surname)) {
+            alert("Surname should only contain letters.");
+            return;
+          }
+
+          if (!emailRegex.test(email) ) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          if (password.length < 8) {
+            alert("Password should be at least 8 characters long.");
+            return;
+          }
+
+          window.location.href = "index.html";
+        });
+    </script>
   </body>
 </html>
