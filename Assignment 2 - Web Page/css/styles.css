@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
-  font-size: medium;
+  /* font-size: medium; */
   margin: 10px;
 }
 
@@ -99,6 +99,8 @@ input {
   font-size: medium;
 }
 
+/***************************************** CSS used for signup.html i.e. for signup Page *****************************************/
+
 #title {
   font-size: 1em;
   border: 1px grey solid;
@@ -117,9 +119,9 @@ input {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #eee;
+  background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
@@ -140,6 +142,7 @@ textarea {
 #previewSection {
   margin-top: 2em;
   font-size: 1.3em;
+  word-wrap: break-word;
 }
 
 .buttons {

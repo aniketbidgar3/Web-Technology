@@ -9,6 +9,7 @@ function updatePreview() {
   text = text.replace(/\n/g, "<br>");
   var previewSection = document.getElementById("previewSection");
   previewSection.innerHTML = text;
+  
 }
 
 function getValue() {
