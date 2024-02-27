@@ -36,17 +36,15 @@
 
       <div class="right">
         <form action="">
-          <input type="text" value="" placeholder="Username" />
+          <input type="text" value="" id="loginemail" placeholder="Email" />
           <br />
           <br />
-          <input type="password" name="" value="" placeholder="Password" />
+          <input type="password"  id="loginpassword" value="" placeholder="Password" />
           <br />
           <br />
 
           <button type="button" id="LogIn" style="background-color: #1877f2">
-            <a href="homepage.html" style="text-decoration: none; color: white">
-              Log in
-            </a>
+           Log in
           </button>
           <br />
           <br />
@@ -66,5 +64,29 @@
         </form>
       </div>
     </div>
+    <script>
+      document
+        .getElementById("LogIn")
+        .addEventListener("click", function () {
+          var email = document.getElementById("loginemail").value;
+          var password = document.getElementById("loginpassword").value;
+
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          
+
+          if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          if (password.length < 8) {
+            alert("Password should be at least 8 characters long.");
+            return;
+          }
+
+          window.location.href = "homepage.html";
+        });
+    </script>
   </body>
 </html>
