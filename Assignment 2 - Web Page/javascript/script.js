@@ -88,13 +88,6 @@ function darkMode() {
   }
 }
 
-//  used to convert text into speech
-// function speak() {
-//   let synth = window.speechSynthesis;
-//   let voice = new SpeechSynthesisUtterance(`${textInput.value}`);
-//   synth.speak(voice);
-// }
-
 let voice = null;
 
 // used to convert text into speech
