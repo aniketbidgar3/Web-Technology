@@ -9,7 +9,6 @@ function updatePreview() {
   text = text.replace(/\n/g, "<br>");
   var previewSection = document.getElementById("previewSection");
   previewSection.innerHTML = text;
-  
 }
 
 function getValue() {
@@ -88,3 +87,27 @@ function darkMode() {
     document.getElementById("mode").innerHTML = '<i class="fa fa-moon-o"></i> ';
   }
 }
+
+//  used to convert text into speech
+// function speak() {
+//   let synth = window.speechSynthesis;
+//   let voice = new SpeechSynthesisUtterance(`${textInput.value}`);
+//   synth.speak(voice);
+// }
+
+let voice = null;
+
+// used to convert text into speech
+function speak() {
+  let synth = window.speechSynthesis;
+  voice = new SpeechSynthesisUtterance(`${textInput.value}`);
+  synth.speak(voice);
+}
+
+function stop() {
+  let synth = window.speechSynthesis;
+  if (voice) {
+    synth.cancel();
+  }
+}
+

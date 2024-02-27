@@ -16,23 +16,23 @@
   <body>
     <nav>
       <a href="index.html" class="text_black"
-          ><button class="nav-button">
-        <i class="fa fa-arrow-left"></i
-        >
-      </button></a>
+        ><button class="nav-button">
+          <i class="fa fa-arrow-left"></i></button
+      ></a>
       <button onclick="darkMode()" id="mode" class="nav-button">
         <i class="fa fa-moon-o"></i>
       </button>
     </nav>
 
     <div class="container">
-      <h1 class="text_black">Text Editor</h1>
+      <h1 class="text_black head">Text Editor</h1>
       <h1>
         <input
           type="text"
           placeholder="Enter Title ...   "
           id="title"
           oninput="previewTitle()"
+          style="width: 40%"
         />
       </h1>
 
@@ -41,7 +41,8 @@
         placeholder="Enter text here..."
         oninput="updatePreview()"
       ></textarea>
-    </div>
+    
+
     <div class="buttons">
       <select name="fonts" id="fonts" onchange="applyFont()">
         <option value="Helvetica" style="font-family: Helvetica, sans-serif">
@@ -56,18 +57,18 @@
         <option value="Courier New" style="font-family: Courier New, monospace">
           Courier New
         </option>
-        <option value="cursive" style="font-family:cursive">
-          Cursive
-        </option>
+        <option value="cursive" style="font-family: cursive">Cursive</option>
       </select>
       <button onclick="uppercaseText()">Uppercase <b>(A)</b></button>
       <button onclick="lowercaseText()">Lowercase <b>(a)</b></button>
       <button onclick="capitalize()">Capitalize <b>(Aa)</b></button>
-      <!-- <button onclick="capitalize()">Capitalize <b>(Aa)</b></button> -->
-      <br />
+      <!-- <br /> -->
       <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
-      <!-- <button onclick="copyText()"><i class="fa fa-copy"></i> Copy</button> -->
+      <!-- <br /> -->
+      <button onclick="speak()">Read aloud</button>
+      <button onclick="stop()">Stop Reading</button>
       <button onclick="copyText()"><i class="fa fa-copy"></i> Copy</button>
+      <!-- <br /> -->
       <button id="cmd" style="background-color: #42b72a">
         <i class="fa fa-download"></i> Download
       </button>
@@ -75,6 +76,7 @@
         <i class="fa fa-remove"></i> Clear
       </button>
     </div>
+  </div>
 
     <div class="container">
       <h1 class="text_black">Preview</h1>
