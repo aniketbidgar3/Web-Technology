@@ -1,0 +1,26 @@
+
+heading { 
+    color: rgb(79, 196, 226); 
+    font-size : 40px;
+    margin: 20px 550px 20px;   
+    background-color : rgb(244, 244, 244); 
+} 
+
+college {
+    margin: 50px;
+    border: 1px solid black;
+    display: block;
+}
+
+student{
+    display: block;
+    border: 1px solid black;
+}
+
+name , surname {
+    display: inline;
+}
+
+heading, division, year , branch ,roll_no { 
+    display : block; 
+} 
