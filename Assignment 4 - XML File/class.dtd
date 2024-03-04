@@ -1,0 +1,11 @@
+<!ELEMENT class (college)>
+<!ELEMENT college (heading , student+)>
+<!ELEMENT student (name,year , branch , division , roll_no)>
+<!ELEMENT name (firstname , surname)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT division (#PCDATA)>
+<!ELEMENT roll_no (#PCDATA)>

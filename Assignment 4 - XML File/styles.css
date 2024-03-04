@@ -1,26 +1,56 @@
+* {
+  font-family: cursive;
+}
 
-heading { 
-    color: rgb(79, 196, 226); 
-    font-size : 40px;
-    margin: 20px 550px 20px;   
-    background-color : rgb(244, 244, 244); 
-} 
+class {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  
+}
 
-college {
-    margin: 50px;
-    border: 1px solid black;
+heading {
+  background: linear-gradient(
+    to right,
+    rgb(111, 216, 240) 0%,
+    rgb(78, 46, 242) 50%,
+    rgb(165, 27, 219) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;}
+
+college{
     display: block;
 }
 
-student{
-    display: block;
-    border: 1px solid black;
+
+student {
+  display: inline-block;
+  width: fit-content;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
-name , surname {
-    display: inline;
+name {
+  font-size: 30px;
+  padding: 15px 5px;
+  margin-bottom: 1rem;
 }
 
-heading, division, year , branch ,roll_no { 
-    display : block; 
-} 
+year,
+branch,
+roll_no,
+division {
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

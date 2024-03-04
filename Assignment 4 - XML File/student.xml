@@ -1,52 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?> 
 <?xml-stylesheet type="text/css" href="styles.css"?>
+<!DOCTYPE class SYSTEM "class.dtd">
+
+
 <class>
-
-  <heading>Welcome To AISSMSCOE</heading>
-<college>
-  <student>
-    <name>Aniket</name>
-    <surname>Bidgar</surname>
-    <year>Third Year</year>
-    <branch>Coputer Science</branch>
-    <division>A</division>
-    <roll_no>21CO026</roll_no>
-  </student>
-
-<student>
-    <name>Aniket</name>
-    <surname>Bhosale</surname>
-    <year>Third Year</year>
-    <branch>Coputer Science</branch>
-    <division>A</division>
-    <roll_no>21CO024</roll_no>
-  </student>
-
-  <student>
-    <name>Atharva</name>
-    <surname>Bhosale</surname>
-    <year>Third Year</year>
-    <branch>Coputer Science</branch>
-    <division>A</division>
-    <roll_no>21CO025</roll_no>
-  </student>
-
-  <student>
-      <name>Parth</name>
-      <surname>Dhonde</surname>
+  <college>
+    <heading>Welcome To AISSMSCOE</heading>
+    <student>
+      <name>
+        <firstname>Aniket</firstname>
+        <surname>Bidgar</surname>
+      </name>
       <year>Third Year</year>
-      <branch>Coputer Science</branch>
+      <branch>Computer Science</branch>
+      <division>A</division>
+      <roll_no>21CO026</roll_no>
+    </student>
+
+    <student>
+      <name>
+        <firstname>Aniket</firstname>
+        <surname>Bhosale</surname>
+      </name>
+      <year>Third Year</year>
+      <branch>Computer Science</branch>
+      <division>A</division>
+      <roll_no>21CO024</roll_no>
+    </student>
+
+    <student>
+      <name>
+        <firstname>Atharva</firstname>
+        <surname>Bhosale</surname>
+      </name>
+      <year>Third Year</year>
+      <branch>Computer Science</branch>
+      <division>A</division>
+      <roll_no>21CO025</roll_no>
+    </student>
+
+    <student>
+      <name>
+        <firstname>Parth</firstname>
+        <surname>Dhonde</surname>
+      </name>
+      <year>Third Year</year>
+      <branch>Computer Science</branch>
       <division>A</division>
       <roll_no>21CO039</roll_no>
     </student>
 
-  <student>
-    <name>Shantanu</name>
-    <surname>Chaudhari</surname>
-    <year>Third Year</year>
-    <branch>Coputer Science</branch>
-    <division>A</division>
-    <roll_no>21CO029</roll_no>
-  </student>
-</college>
+    <student>
+      <name>
+        <firstname>Shantanu</firstname>
+        <surname>Chaudhari</surname>
+      </name>
+      <year>Third Year</year>
+      <branch>Computer Science</branch>
+      <division>A</division>
+      <roll_no>21CO029</roll_no>
+    </student>
+
+  </college>
 </class>
