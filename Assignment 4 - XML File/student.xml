@@ -1,8 +1,15 @@
 <?xml-stylesheet type="text/css" href="styles.css"?>
-<!DOCTYPE class SYSTEM "class.dtd">
 
+<!-- link to add class.dtd in xml file -->
 
-<class>
+<!-- <!DOCTYPE class SYSTEM "student.dtd">
+<class> -->
+
+<!-- link to add student.xsd in xml file -->
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="student.xsd"> 
+
   <college>
     <heading>Welcome To AISSMSCOE</heading>
     <student>
@@ -60,5 +67,6 @@
       <roll_no>21CO029</roll_no>
     </student>
 
+   
   </college>
 </class>
