@@ -39,6 +39,11 @@ student {
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
+student:hover{
+  transform: scale(1.1);
+  transition: 900ms;
+}
+
 name {
   font-size: 30px;
   padding: 15px 5px;
