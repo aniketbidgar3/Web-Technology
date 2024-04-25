@@ -1,0 +1,119 @@
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-entry {
+  flex: 1 1 30%; /* 30% width with flex-grow, flex-shrink, flex-basis */
+  min-width: 200px; /* Ensures smaller devices have a reasonable size */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-entry:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-left {
+  background-color: #007bff; /* Blue color */
+}
+
+.btn-right {
+  background-color: #ff0000; /* Red color */
+}
+
+/* Basic styling for the blog application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling to center and set width */
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling for a clean layout */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer styling for a clean finish */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Blog entry styling to set the layout */
+.blog-entry {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: inline-block;
+}
+
+/* Button styling to set color and position */
+
+/* Form input styling for a clean look */
+input, textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+
+/* Prevent textareas from being resizable */
+textarea {
+    resize: none; /* Disable resizing */
+}
+/* Button styling for the form submit button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #218838; /* Darker green on hover */
+}
