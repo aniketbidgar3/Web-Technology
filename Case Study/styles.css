@@ -100,6 +100,7 @@ input, textarea {
 
 /* Prevent textareas from being resizable */
 textarea {
+    height:10rem ;
     resize: none; /* Disable resizing */
 }
 /* Button styling for the form submit button */
